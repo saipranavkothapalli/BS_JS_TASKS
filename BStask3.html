@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSTask3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .card:hover {
+            background-color: lightgray !important;
+        }
+        
+        .card {
+            border-radius: 10px;
+        }
+        
+        .btn:hover {
+            background-color: rgb(242, 242, 242);
+            color: black;
+        }
+        
+        .display-5 {
+            margin-left: 30px;
+        }
+        
+        .display .btn {
+            color: black;
+        }
+        
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: black !important;
+        }
+        
+        .btn.btn-primary {
+            background-color: rgb(3, 155, 250);
+            color: black;
+        }
+        
+        .btn.btn-primary:hover {
+            background-color: White;
+            color: rgb(3, 155, 250);
+        }
+        
+        .custom-square {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm" style="font-size: large; margin-bottom: 50px; background-color: white; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); height: 80px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Company name</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="margin-right:27px;">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="margin-right:27px;">Enterprise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="margin-right:27px;">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="margin-right:27px;">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-light" type="submit" style="border: 2px rgb(78, 158, 219) solid; border-radius: 10px; color: rgb(78, 158, 219);margin-right:12px;">SignUp</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="text-center">
+        <br>
+        <h1 class="display-5 text-center">Pricing</h1>
+        <p style="font-size:20px;margin-left:29%;margin-right:30%;display:flex;">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.
+        </p>
+
+    </div>
+    <div class="row my-5">
+        <div class="col-4">
+            <div class="card " style="width: 300px; margin-left: 200px;">
+
+                <div class="card-body text-center">
+                    <h5 class="card-title text-center">Free</h5>
+                    <hr>
+                    <p class="card-text text-center">
+                        <p>
+                            <span class="price-bold" style="font-size: 30px">$0</span>
+                            <span class="mo">/mo</span>
+                        </p>10 users included<br>2 GB of storage<br>Email support<br>Help center access</p>
+                    <div class="btn btn-primary" style="background-color: white; color: rgb(3, 155, 250); border: 2px solid rgb(3, 155, 250);width:100%;">Sign Up for free</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 300px; margin-left: 100px;">
+
+                <div class="card-body text-center">
+                    <h5 class="card-title text-center">Pro</h5>
+                    <hr>
+                    <p class="card-text text-center">
+                        <p>
+                            <span class="price-bold" style="font-size: 30px">$15</span
+            ><span class="mo">/mo</span>
+                        </p>20 users included<br>10 GB of storage<br>Email support<br>Help center access</p>
+                    <div class="btn btn-primary" style="width: 100%;color:white;">Get Started</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card " style="width: 300px; margin-right: 300px;">
+
+                <div class="card-body text-center">
+                    <h5 class="card-title text-center">Enterprise</h5>
+                    <hr>
+                    <p class="card-text text-center">
+                        <p>
+                            <span class="price-bold" style="font-size: 30px">$29</span
+            ><span class="mo">/mo</span>
+                        </p>30 users included<br>15 GB of storage<br>Email support<br>Help center access</p>
+                    <div class="btn btn-primary" style="width: 100%;color:white;">Contact Us</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <hr style="margin-left:10%;margin-right:10%;">
+    <br><br>
+    <footer>
+
+        <div class="row mx-5" style="font-family: Arial, Helvetica, sans-serif;">
+            <div class="col-2" style="margin-left: 100px;">
+                <h3> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="purple" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+                    <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
+                    <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
+                  </svg>
+                </h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+                    <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
+                   </svg> 2017</div>
+            <div class="col-2" style="margin-left: 100px;">
+                <h3>Features</h3>
+                <p>Cool stuff<br>Random tools<br>Team features<br>many tools<br>cool tools</p>
+            </div>
+            <div class="col-2" style="margin-left: 100px;">
+                <h3>Resources</h3>
+                <p>Cool stuff<br>Random tools<br>Team features<br>many tools<br>cool tools</p>
+            </div>
+            <div class="col-2" style="margin-left: 150px;">
+                <h3>About</h3>
+                <p>Cool stuff<br>Random tools<br>Team features<br>many tools<br>cool tools</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS Task 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        tr,
+        td {
+            margin: 20px;
+            padding: 10px;
+        }
+        
+        label {
+            padding-right: 20px;
+        }
+        
+        #c1 {
+            width: fit-content;
+            background-color: lightgrey;
+            border: 2px;
+            border-radius: 10px;
+        }
+        
+        select {
+            width: 100%;
+        }
+        
+        .form-check-label {
+            color: black;
+        }
+        
+        .was-validated .form-control:valid:not([required]),
+        .was-validated select:valid:not([required]),
+        .was-validated .form-check-input[type="radio"]:valid:not([required]) {
+            border-color: #ced4da !important;
+            background-image: none !important;
+            box-shadow: none !important;
+        }
+        
+        .was-validated .form-check-input[type="radio"]:valid[name="hosting"],
+        .was-validated .form-check-input[type="radio"]:valid[name="hosting"]+.form-check-label {
+            border-color: #ced4da !important;
+            background-image: none !important;
+            box-shadow: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div id="c1">
+
+            <form class="form m-5 p-2 was-validated ">
+                <table>
+                    <tr>
+                        <td><label class="form-label " for="name"><b>First Name </b></label></td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-user"></i></span><input class="form-control" type="text" placeholder="First Name" required>
+                                <div class="invalid-feedback">
+                                    Please supply Your First Name</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label class="form-label" for="name"><b>Last Name </b> </label></td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-user"></i></span><input class="form-control" type="text" placeholder="Last Name" required>
+                                <div class="invalid-feedback">
+                                    Please supply Your Last Name</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label" for="name"><b>E-mail </b> </label></td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span><input class="form-control" type="email" placeholder="E-mail Address" required>
+                                <div class="invalid-feedback">
+                                    Please supply Your email address</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label" for="name"><b>Phone # </b></label>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-phone"></i></span><input class="form-control" type="number" placeholder="Phone" required>
+                                <div class="invalid-feedback">
+                                    Please supply Your Phone number</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label" for="name"><b>Address </b></label>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-house"></i></span><input class="form-control" type="text" placeholder="Address" required>
+                                <div class="invalid-feedback">
+                                    Please supply Your street address </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label" for="name"><b>City </b></label>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-house"></i></span><input class="form-control" type="text" placeholder="City" required>
+                                <div class="invalid-feedback">
+                                    Please supply Your city </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label" for="name"><b>State </b></label>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-bars"></i></span>
+                                <select class="form-select">
+                                <option>Please Select Your State</option>
+                                <option>Andhra Pradesh</option>
+                                <option>Manipur</option>
+                                <option>Meghalaya</option>
+                                <option>Haryana</option>
+                                <option>Telangana</option>
+                            </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-check-label" for="name"><b>Do you have hosting?</b> </label>
+                        </td>
+                        <td>
+                            <div class="form-check">
+                                <input type="radio" name="hosting" id="hostingYes">
+                                <label class="form-check-label" for="hostingYes">Yes</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="hosting" id="hostingNo">
+                                <label class="form-check-label" for="hostingNo">No</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label" for="name"><b>Project description</b> </label>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-regular fa-pencil"></i></span><textarea class="form-control" type="text" placeholder="Project description"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="input-group" style="margin-left: 180px;"><button type="button" class="btn btn-warning text-white ">Send</button>
+                    <span class="input-group-text text-white m-0 p-1 bg-warning"><i class="fa-brands fa-telegram"></i></span></div>
+            </form>
+            </div>
+    </center>
+</body>
+
+</html>

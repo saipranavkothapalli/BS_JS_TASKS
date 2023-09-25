@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSTask4</title>
+    <style>
+        .card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card {
+  margin-top: 10px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-clip: padding-box;
+  min-height:550px;
+  transition: transform 0.3s ease;
+  width:10px;
+}
+
+.card:hover img {
+            transform: translateY(10px); /* Slide the image down by 10 pixels when hovered */
+            transition: transform 0.3s ease; /* Add transition for smooth animation */
+        }
+
+.card span.card-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.card .card-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.card .card-image img {
+  border-radius: 2px 2px 0 0;
+  background-clip: padding-box;
+  position: relative;
+  z-index: -1;
+}
+
+.card .card-image span.card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 16px;
+}
+
+.card .card-content {
+   
+  padding: 16px;
+  border-radius: 0 0 2px 2px;
+  background-clip: padding-box;
+  box-sizing: border-box;
+}
+
+.card .card-content p {
+  margin: 0;
+  color: inherit;
+}
+
+.card .card-content span.card-title {
+  line-height: 48px;
+}
+
+.card .card-action {
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 16px;
+}
+
+.card .card-action a {
+  color: #ffab40;
+  margin-right: 16px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.card .card-action a:hover {
+  color: #ffd8a6;
+  text-decoration: none;
+}
+.empty-space {
+            margin-top: 200px; /* Adjust the amount of empty space as needed */
+        }
+
+
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="row text-justify">
+        <div class="card col-2 m-5 border border-dark p-0">
+            <img src="materialcards2.png" alt="img" />
+            <div class="card-body">
+                <h3 class="card-title"></h3>
+                <p class="card-text"style="font-size:x-large">
+                    Cards for display in portfolio style material design by Google.
+                </p>
+                <hr />
+                <div class="card-action">
+                    <a href="#" target="new_blank">Link</a>
+                    <a href="#" target="new_blank">Link</a>
+                </div>
+                <div class="empty-space"></div> <!-- Empty space below links -->
+            </div>
+        </div>
+        <!-- ... (repeat for other cards) -->
+        <div class="card col-2 m-5 border border-dark p-0">
+            <img src="materialcards1.png" alt="img" />
+            <div class="card-body">
+                <h3 class="card-title"></h3>
+                <p class="card-text"style="font-size:x-large">
+                    Cards for display in portfolio style material design by Google.
+                </p>
+                <hr />
+                <div class="card-action">
+                    <a href="https://vitap.ac.in/">Link </a>
+                    <a href="https://vitap.ac.in/">Link </a>
+                </div>
+                <div class="empty-space"></div> <!-- Empty space below links -->
+            </div>
+        </div>
+
+        <div class="card col-2 m-5 border border-dark p-0">
+            <img src="materialcards1.png" alt="img" />
+            <div class="card-body">
+                
+                <h3 class="card-title"></h3>
+                <p class="card-text"style="font-size:x-large">
+                    Cards for display in portfolio style material design by Google.
+                </p>
+                <hr />
+                <div class="card-action">
+                    <a href="https://vitap.ac.in/">Link </a>
+                    <a href="https://vitap.ac.in/">Link </a>
+                </div>
+                <div class="empty-space"></div> <!-- Empty space below links -->
+            </div>
+        </div>
+
+        <div class="card col-2 m-5 border border-dark p-0">
+            <img src="materialcards1.png" alt="img" />
+            <div class="card-body">
+                <h3 class="card-title"></h3>
+                <p class="card-text"style="font-size:x-large">
+                    Cards for display in portfolio style material design by Google.
+                </p>
+                <hr />
+                <div class="card-action">
+                    <a href="https://vitap.ac.in/">Link </a>
+                    <a href="https://vitap.ac.in/">Link </a>
+                </div>
+                <div class="empty-space"></div> <!-- Empty space below links -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
